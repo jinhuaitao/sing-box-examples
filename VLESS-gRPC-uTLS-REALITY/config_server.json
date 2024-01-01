@@ -32,28 +32,28 @@
             "domain_strategy": "ipv4_only",
             "users": [
                 {
-                    "uuid": "chika", // 或执行 ./sing-box generate uuid 生成
-                    "flow": "" // 留空
+                    "uuid": "11aa87ba-9416-4cb3-9695-b693bbb2a351", 
+                    "flow": "" 
                 }
             ],
             "tls": {
                 "enabled": true,
-                "server_name": "www.lovelive-anime.jp", // 客户端可用的 serverName 列表，暂不支持 * 通配符
+                "server_name": "www.jinhuaitao.link", 
                 "reality": {
                     "enabled": true,
                     "handshake": {
-                        "server": "www.lovelive-anime.jp", // 目标网站最低标准：国外网站，支持 TLSv1.3、X25519 与 H2，域名非跳转用（主域名可能被用于跳转到 www）
+                        "server": "www.jinhuaitao.link", 
                         "server_port": 443
                     },
-                    "private_key": "2KZ4uouMKgI8nR-LDJNP1_MHisCJOmKGj9jUjZLncVU", // 执行 ./sing-box generate reality-keypair 生成，填 "Privatekey" 的值
-                    "short_id": [ // 客户端可用的 shortId 列表，可用于区分不同的客户端
-                        "6ba85179e30d4fc2" // 0 到 f，长度为 2 的倍数，长度上限为 16，可留空，或执行 ./sing-box generate rand --hex 8 生成
+                    "private_key": "aLqiW8tbRezwFsth3ZWGDz3yCbLf1bUvdN-8D3HRn18", 
+                    "short_id": [ 
+                        "e41a7aa18a5db34a" 
                     ]
                 }
             },
             "transport": {
                 "type": "grpc",
-                "service_name": "lovelive" // 指定服务名称
+                "service_name": "lovelive" 
             }
         }
     ],
